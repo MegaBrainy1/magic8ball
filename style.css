@@ -7,11 +7,11 @@ body {
 
 .outer-circle {
 
-  width: 300px;
+  width: 150px;
   background-color: white;
   border: solid 3px black;
   margin-top: 15px;
-  min-height: 300px;
+  min-height: 150px;
   border-radius: 150px;
   box-shadow: 2px 2px 1px 0px black;
   /* Center vertically and horizontally */
