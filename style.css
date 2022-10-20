@@ -7,17 +7,19 @@ body {
 
 .outer-circle {
 
-  width: 150px;
+  width: 200px;
   background-color: white;
   border: solid 3px black;
   margin-top: 15px;
-  min-height: 150px;
-  border-radius: 150px;
+  min-height: 200px;
+    border-radius: 50%;
   box-shadow: 2px 2px 1px 0px black;
   /* Center vertically and horizontally */
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: -webkit-grab; cursor: grab;
+  user-select: none;
 
 }
 
@@ -28,11 +30,11 @@ body {
 
 
 .inner-circle {
-  width: 150px;
+  width: 100px;
   background-color: white;
   border: solid 3px black;
-  min-height: 150px;
-  border-radius: 150px;
+  min-height: 100px;
+    border-radius: 50%;
     /* Center vertically and horizontally */
   display: flex;
   justify-content: center;
@@ -42,7 +44,7 @@ body {
 p{
   text-align: center;
   color: black;
-  font-size: 80px;
+  font-size: 40px;
   font-family: monospace;
   font-weight: bold;
   position: absolute;
@@ -53,21 +55,21 @@ p{
 width: 0;
 height: 0;
 border-style: solid;
-border-width: 100px 55px 0 55px;
+border-width: 70px 43px 0 43px;
 border-color: #000000 transparent transparent transparent;
-margin-top: 35px;
+margin-top: 20px;
 position: absolute;
 
 }
 
 .fortune{
-  width: 60px;
-  height: 40px;
-  font-size: 11px;
+  width: 50px;
+  height: 20px;
+  font-size: 8px;
   color: white;
   font-family: monospace;
-  margin-top:-95px;
-  margin-left:-30px;
+margin-top:-60px;
+margin-left:-25px;
   text-align: center;
 }
 
