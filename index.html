@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="outer-circle" id="outer-circle" onClick="fortuneFunction()">
+      <div class="inner-circle">
+        <p class="eight">8</p>
+        <div class="triangle"  id="triangle" style="display: none;">
+          <div class="fortune" id="fortune"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+var items= ["It is certain"
+            ,"Reply hazy, try again"
+            ,"Don’t count on it"
+            ,"It is decidedly so"
+            ,"Ask again later"
+            ,"My reply is no"
+            ,"Without a doubt"
+            ,"Better not tell you now"
+            ,"My sources say no"
+		,"Yes definitely"
+            ,"Cannot predict now"
+            ,"Outlook not so good"
+            ,"You may rely on it"
+            ,"Concentrate and ask again"
+            ,"Very doubtful"
+            ,"As I see it, yes"
+            ,"Most likely"
+            ,"Outlook good"
+            ,"Yes	"
+            ,"Signs point to yes"
+            ];
+
+function fortuneFunction() {
+
+  var randomItem = items[Math.floor(Math.random()*items.length)];
+  document.getElementById("fortune").textContent=randomItem;
+
+
+
+var triangle = document.getElementById("triangle");
+  if (triangle.style.display === "none") {
+    triangle.style.display = "block";
+  } else {
+    triangle.style.display = "none";
+  }
+
+}
+</script>
+
+</body>
+</html>

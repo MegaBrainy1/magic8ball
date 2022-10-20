@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.outer-circle {
+
+  width: 200px;
+  background-color: white;
+  border: solid 3px black;
+  margin-top: 15px;
+  min-height: 200px;
+    border-radius: 50%;
+  box-shadow: 2px 2px 1px 0px black;
+  /* Center vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: -webkit-grab; cursor: grab;
+  user-select: none;
+
+}
+
+ .outer-circle:active {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+
+.inner-circle {
+  width: 100px;
+  background-color: white;
+  border: solid 3px black;
+  min-height: 100px;
+    border-radius: 50%;
+    /* Center vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  font-family: monospace;
+  font-weight: bold;
+  position: absolute;
+}
+
+.triangle {
+
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 70px 43px 0 43px;
+border-color: #000000 transparent transparent transparent;
+margin-top: 20px;
+position: absolute;
+
+}
+
+.fortune{
+  width: 50px;
+  height: 20px;
+  font-size: 8px;
+  color: white;
+  font-family: monospace;
+margin-top:-60px;
+margin-left:-25px;
+  text-align: center;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
