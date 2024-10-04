@@ -21,7 +21,7 @@ body {
   margin-top: 15px;
   min-height: 200px;
     border-radius: 50%;
-  box-shadow: 2px 2px 1px 0px black;
+  box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.5);
   /* Center vertically and horizontally */
   display: flex;
   justify-content: center;
