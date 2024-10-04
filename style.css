@@ -16,7 +16,7 @@ body {
 
 .outer-circle {
   width: 200px;
-  background-color: white;
+  background-color: black;
   border: solid 3px black;
   margin-top: 15px;
   min-height: 200px;
