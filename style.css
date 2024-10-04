@@ -52,7 +52,7 @@ p {
   text-align: center;
   color: black;
   font-size: 60px;
- /* font-weight: bold; */
+  font-weight: regular;
   position: absolute;
   font-family: "Kairos Sans W06 Cond Medium";
 }    
